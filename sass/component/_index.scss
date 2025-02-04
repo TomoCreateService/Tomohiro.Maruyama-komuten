@@ -2,3 +2,12 @@
     width:75px;
     height: 80px;
 }
+
+.c-header__menu{
+    text-decoration: none;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    &:hover{
+        opacity: 0.5;
+    }
+}

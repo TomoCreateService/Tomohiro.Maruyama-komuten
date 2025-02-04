@@ -1,16 +1,12 @@
-import gulp from "gulp";
-import gulpSass from "gulp-sass";
-import * as dartSass from "sass";
+var gulp = require("gulp");
+var sass = require("gulp-sass");
 
-const sass = gulpSass(dartSass);
+gulp.task("sass",function(){
+  gulp.src("sass/**/*.scss")
+  .pipe(sass({outputStyle: 'expanded'}))
+  .pipe(gulp.dest("./css"))
+})
 
-const compileSass = () => {
-  return gulp
-    .src("./sass/**/*.scss", { encoding: false })
-    .pipe(sass.sync().on("error", sass.logError))
-    .pipe(gulp.dest("./css"));
-};
-
-export const build = gulp.parallel(compileSass);
-
-export default build;
+gulp.task("default",function(){
+  gulp.watch("sass/**/*.scss",["sass"]);
+})

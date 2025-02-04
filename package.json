@@ -1,10 +1,23 @@
 {
-  "type": "module",
-  "private": true,
-  "scripts": {},
+  "name": "maruyama-komuten",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomoCreateService/Tomohiro.Maruyama-komuten.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomoCreateService/Tomohiro.Maruyama-komuten/issues"
+  },
+  "homepage": "https://github.com/TomoCreateService/Tomohiro.Maruyama-komuten#readme",
+  "description": "",
   "devDependencies": {
-    "gulp": "^5.0.0",
-    "gulp-sass": "^6.0.0",
-    "sass": "^1.83.4"
+    "gulp": "^5.0.0"
   }
 }

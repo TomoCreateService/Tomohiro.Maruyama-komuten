@@ -4,3 +4,25 @@
     width:95px;
     height: 100px;
 }
+.p-header__right{
+    margin-inline-start: 435px;
+    &-menu{
+        ul{
+            display: grid;
+            gap: 40px;
+            grid-template-columns: auto auto auto auto auto;
+            font-size: 30px;
+        }
+    }
+}
+
+.p-top__title{
+    position: absolute;
+    top:299px;
+    left:618px;
+    width:531px;
+    height: 240px;
+    background-color: #ffffff;
+    opacity: 0.9;
+
+}
