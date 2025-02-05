@@ -2,6 +2,9 @@ body{
     width:100%;
     background-color: white;
 }
+a{
+    text-decoration: none;
+}
 #l-header{
     height: 130px;
     display: flex;
@@ -10,4 +13,12 @@ body{
 
 #l-top{
     position: relative;
+    width:1440px;
+    height: 560px;
+}
+
+#l-about{
+    width:1000px;
+    height: 521px;
+    margin:10px auto;
 }

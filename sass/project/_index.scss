@@ -16,7 +16,7 @@
     }
 }
 
-.p-top__title{
+.p-top__sentence{
     position: absolute;
     top:299px;
     left:618px;
@@ -24,5 +24,28 @@
     height: 240px;
     background-color: #ffffff;
     opacity: 0.9;
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
 
+.p-about__block{
+    display: flex;
+    &-left{
+        width:480px;
+        height: 400px;
+    }
+    &-right{
+        width: 480px;
+        height: 376px;
+    }
+    &-button{
+        width:322px;
+        margin-block-start: 62px;
+        margin-inline: auto;
+        
+    }
 }

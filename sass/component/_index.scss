@@ -1,13 +1,48 @@
+.c-title{
+    font-size: 50px;
+    line-height: 60.5px;
+    margin-block: 10px;
+    font-weight: 400;
+}
+.c-sentence{
+    font-size: 20px;
+    line-height: 24.2px;
+    font-weight: 400;
+}
+.c-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #000080;
+    color: white;
+    border-radius: 25px;
+    font-size: 30px;
+    line-height: 36.3px;
+}
+.c-arrow{
+    width:32px;
+}
 .c-header__logo{
     width:75px;
     height: 80px;
 }
 
 .c-header__menu{
-    text-decoration: none;
+    
     opacity: 1;
     transition: opacity 0.3s ease;
     &:hover{
         opacity: 0.5;
     }
+}
+
+.c-top__title{
+    
+    font-size: 48px;
+    line-height: 58px;
+}
+.c-top__sentence-sub{
+    font-size: 32px;
+    line-height: 38.7px;
 }
