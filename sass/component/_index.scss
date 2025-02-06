@@ -1,7 +1,7 @@
 .c-title{
     font-size: 50px;
     line-height: 60.5px;
-    margin-block: 10px;
+    padding-block: 10px;
     font-weight: 400;
 }
 .c-sentence{
@@ -45,4 +45,42 @@
 .c-top__sentence-sub{
     font-size: 32px;
     line-height: 38.7px;
+}
+
+.c-works__title{
+    font-size: 30px;
+    line-height: 36.3px;
+    font-weight: 400;
+}
+
+.c-works__img{
+    width:326.67px;
+    height: 203px;
+    padding-block: 5px;
+}
+
+.c-works__sentence{
+    font-size: 20px;
+    line-height: 24.2px;
+    font-weight: 400;
+}
+
+.c-review__img{
+    width:480px;
+    height: 300px;
+    padding-block: 5px;
+}
+
+.c-review__text{
+    width:300px;
+    height: 175px;
+    font-size: 20px;
+    line-height: 24.2px;
+    font-weight: 400;
+}
+
+.c-review__customer-name{
+    font-size: 20px;
+    line-height: 24.2px;
+    font-weight: 400;
 }

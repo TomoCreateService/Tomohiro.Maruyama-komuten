@@ -34,6 +34,7 @@
 
 .p-about__block{
     display: flex;
+    padding-block: 10px;
     &-left{
         width:480px;
         height: 400px;
@@ -48,4 +49,32 @@
         margin-inline: auto;
         
     }
+}
+
+.p-works__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding-block-start: 10px;
+}
+
+.p-review__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding-block-start: 10px;
+}
+
+.p-review__info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+
+}
+
+.p-review__block-button{
+    width:212px;
+    margin-block-start: 20px;
+    margin-inline: auto;
+    margin-block-end: 10px;
 }
