@@ -1,95 +1,103 @@
-.c-title{
-    font-size: 50px;
-    line-height: 60.5px;
-    padding-block: 10px;
+@function vw($px) {
+    @return $px / 1440 * 100vw;
+}
+
+.c-title {
+    font-size: vw(50);
+    line-height: vw(60.5);
+    padding-block: vw(10);
     font-weight: 400;
 }
-.c-sentence{
-    font-size: 20px;
-    line-height: 24.2px;
+
+.c-sentence {
+    font-size: vw(20);
+    line-height: vw(24.2);
     font-weight: 400;
 }
-.c-button{
+
+.c-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: vw(50);
     background-color: #000080;
     color: white;
-    border-radius: 25px;
-    font-size: 30px;
-    line-height: 36.3px;
+    border-radius: vw(25);
+    font-size: vw(30);
+    line-height: vw(36.3);
 }
-.c-arrow{
-    width:32px;
+
+.c-arrow {
+    width: vw(32);
 }
+
 .c-header__logo,
-.c-footer__logo{
-    width:75px;
-    height: 80px;
-    margin:10px;
+.c-footer__logo {
+    width: vw(75);
+    height: vw(80);
+    margin: vw(10);
 }
 
 .c-header__menu,
-.c-footer__menu{
+.c-footer__menu {
     opacity: 1;
     transition: opacity 0.3s ease;
-    &:hover{
+    &:hover {
         opacity: 0.5;
     }
 }
 
-.c-top__title{
-    
-    font-size: 48px;
-    line-height: 58px;
-}
-.c-top__sentence-sub{
-    font-size: 32px;
-    line-height: 38.7px;
+.c-top__title {
+    font-size: vw(48);
+    line-height: vw(58);
 }
 
-.c-works__title{
-    font-size: 30px;
-    line-height: 36.3px;
+.c-top__sentence-sub {
+    font-size: vw(32);
+    line-height: vw(38.7);
+}
+
+.c-works__title {
+    font-size: vw(30);
+    line-height: vw(36.3);
     font-weight: 400;
 }
 
-.c-works__img{
-    width:326.67px;
-    height: 203px;
-    padding-block: 5px;
+.c-works__img {
+    width: vw(326.67);
+    height: vw(203);
+    padding-block: vw(5);
 }
 
-.c-works__sentence{
-    font-size: 20px;
-    line-height: 24.2px;
+.c-works__sentence {
+    font-size: vw(20);
+    line-height: vw(24.2);
     font-weight: 400;
 }
 
-.c-review__img{
-    width:480px;
-    height: 300px;
-    padding-block: 5px;
+.c-review__img {
+    width: vw(480);
+    height: vw(300);
+    padding-block: vw(5);
 }
 
-.c-review__text{
-    width:300px;
-    height: 175px;
-    font-size: 20px;
-    line-height: 24.2px;
+.c-review__text {
+    width: vw(300);
+    height: vw(175);
+    font-size: vw(20);
+    line-height: vw(24.2);
     font-weight: 400;
 }
 
-.c-review__customer-name{
-    font-size: 20px;
-    line-height: 24.2px;
+.c-review__customer-name {
+    font-size: vw(20);
+    line-height: vw(24.2);
     font-weight: 400;
 }
 
-.c-consaltation__text{
-    padding-block-start:18px;
-    font-size: 20px;
-    line-height: 24.2px;
+.c-consaltation__text {
+    padding-block-start: vw(18);
+    font-size: vw(20);
+    line-height: vw(24.2);
     font-weight: 400;
 }

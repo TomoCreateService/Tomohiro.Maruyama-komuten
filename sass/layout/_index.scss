@@ -1,53 +1,55 @@
-
 @function vw($px) {
-
-	@return $px / 1440 * 100vw;
+    @return $px / 1440 * 100vw;
 }
-body{
-    width:100%;
+
+body {
+    width: 100%;
     background-color: white;
     overflow-x: hidden;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 #l-header,
-#l-footer{
-    width:1000px;
-    height: 120px;
+#l-footer {
+    width: vw(1000);
+    height: vw(120);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 435px;
-    margin-inline:auto;
-
+    gap: vw(435);
+    margin-inline: auto;
+    margin: 0 auto vw(10);
 }
 
-#l-top{
+#l-top {
     position: relative;
-    width:1440px;
-    height: 560px;
+    width: vw(1440);
+    height: vw(580);
+    margin: 0 auto vw(10);
 }
 
-#l-about{
-    width:1000px;
-    height: 521px;
-    margin:10px auto 0;
+#l-about {
+    width: vw(1000);
+    height: vw(521);
+    margin: 0 auto vw(10);
 }
 
-#l-works{
-    width:1000px;
-    height: 490px;
-    margin:10px auto 0;
+#l-works {
+    width: vw(1000);
+    height: vw(490);
+    margin: 0 auto vw(10);
 }
 
-#l-review{
-    width:1000px;
-    height: 661px;
-    margin:10px auto 0;
+#l-review {
+    width: vw(1000);
+    height: vw(661);
+    margin: 0 auto vw(10);
 }
 
-#l-consaltation{
-    width:1000px;
-    height: 457px;
-    margin:10px auto 0;
+#l-consaltation {
+    width: vw(1000);
+    height: vw(457);
+    margin: 0 auto vw(10);
 }
