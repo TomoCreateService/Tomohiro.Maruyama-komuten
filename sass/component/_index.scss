@@ -23,13 +23,15 @@
 .c-arrow{
     width:32px;
 }
-.c-header__logo{
+.c-header__logo,
+.c-footer__logo{
     width:75px;
     height: 80px;
+    margin:10px;
 }
 
-.c-header__menu{
-    
+.c-header__menu,
+.c-footer__menu{
     opacity: 1;
     transition: opacity 0.3s ease;
     &:hover{
@@ -90,17 +92,4 @@
     font-size: 20px;
     line-height: 24.2px;
     font-weight: 400;
-}
-
-.c-footer__logo{
-    width:75px;
-    height: 80px;
-}
-
-.c-footer__menu{
-    opacity: 1;
-    transition: opacity 0.3s ease;
-    &:hover{
-        opacity: 0.5;
-    }
 }

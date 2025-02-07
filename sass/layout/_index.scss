@@ -1,14 +1,25 @@
+
+@function vw($px) {
+
+	@return $px / 1440 * 100vw;
+}
 body{
     width:100%;
     background-color: white;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
 }
-#l-header{
-    height: 130px;
-    display: flex;
-    align-items: center;
+#l-header,
+#l-footer{
+    width:1000px;
+    height: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 435px;
+    margin-inline:auto;
+
 }
 
 #l-top{
@@ -39,10 +50,4 @@ a{
     width:1000px;
     height: 457px;
     margin:10px auto 0;
-}
-
-#l-footer{
-    height: 130px;
-    display: flex;
-    align-items: center;
 }
