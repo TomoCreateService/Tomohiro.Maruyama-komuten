@@ -1,7 +1,13 @@
 @function vw($px) {
     @return $px / 1440 * 100vw;
 }
-
+//下からせりあがるようなアニメーション
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 0.9;
+    }
+}
 .p-header__left,
 .p-footer__left {
     margin-block: vw(10);
@@ -42,6 +48,9 @@
     align-items: center;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
+    animation: slideUp 1s ease-out forwards;
+    transform: translateY(100%);
+    opacity: 0;
 }
 
 .p-top__img {

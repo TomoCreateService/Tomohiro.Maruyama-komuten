@@ -1,5 +1,15 @@
+//縮小させる為に関数を定義
 @function vw($px) {
     @return $px / 1440 * 100vw;
+}
+
+//ホバーするとぷるぷる振るわせる定義
+@keyframes shake {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(vw(2), vw(2)) rotate(2deg); }
+    50% { transform: translate(0, vw(2)) rotate(0deg); } 
+    75% { transform: translate(vw(-2), 0) rotate(-2deg); } 
+    100% { transform: translate(0, 0) rotate(0deg); }
 }
 
 .c-title {
@@ -25,6 +35,10 @@
     border-radius: vw(25);
     font-size: vw(30);
     line-height: vw(36.3);
+    transition: transform 0.3s ease;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .c-arrow {
@@ -36,6 +50,11 @@
     width: vw(75);
     height: vw(80);
     margin: vw(10);
+    display: inline-block; 
+    transition: all 0.3s ease; // スムーズな遷移のため
+    &:hover {
+        animation: shake 0.1s infinite;
+    }
 }
 
 .c-header__menu,
@@ -50,11 +69,13 @@
 .c-top__title {
     font-size: vw(48);
     line-height: vw(58);
+    font-weight: 400;
 }
 
 .c-top__sentence-sub {
     font-size: vw(32);
     line-height: vw(38.7);
+    font-weight: 400;
 }
 
 .c-works__title {
