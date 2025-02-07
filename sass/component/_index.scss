@@ -84,3 +84,23 @@
     line-height: 24.2px;
     font-weight: 400;
 }
+
+.c-consaltation__text{
+    padding-block-start:18px;
+    font-size: 20px;
+    line-height: 24.2px;
+    font-weight: 400;
+}
+
+.c-footer__logo{
+    width:75px;
+    height: 80px;
+}
+
+.c-footer__menu{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    &:hover{
+        opacity: 0.5;
+    }
+}

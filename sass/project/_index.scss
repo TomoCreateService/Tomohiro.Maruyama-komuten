@@ -78,3 +78,53 @@
     margin-inline: auto;
     margin-block-end: 10px;
 }
+
+.p-consaltation__block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    &-left{
+        width:460px;
+        height: 366px;
+        img{
+            width:460px;
+            height: 300px;
+        }
+    }
+    &-right{
+        width:530px;
+        height: 366px;
+        &-info{
+            width:530px;
+            height: 252px;
+            font-size:30px;
+            font-weight: 400;
+            line-height: 36.3px;
+            text-align: center;
+        }
+    }
+    &-button{
+        width:272px;
+        margin-block-start: 36px;
+        margin-inline: auto;
+    }
+
+}
+
+.p-footer__left{
+    margin-inline-start: 220px;
+    margin-block-start: 10px;
+    width:95px;
+    height: 100px;
+}
+.p-footer__right{
+    margin-inline-start: 435px;
+    &-menu{
+        ul{
+            display: grid;
+            gap: 40px;
+            grid-template-columns: auto auto auto auto auto;
+            font-size: 30px;
+        }
+    }
+}

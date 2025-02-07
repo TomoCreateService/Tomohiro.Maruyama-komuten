@@ -20,7 +20,7 @@ a{
 #l-about{
     width:1000px;
     height: 521px;
-    margin:10px auto;
+    margin:10px auto 0;
 }
 
 #l-works{
@@ -33,4 +33,16 @@ a{
     width:1000px;
     height: 661px;
     margin:10px auto 0;
+}
+
+#l-consaltation{
+    width:1000px;
+    height: 457px;
+    margin:10px auto 0;
+}
+
+#l-footer{
+    height: 130px;
+    display: flex;
+    align-items: center;
 }
