@@ -12,6 +12,21 @@ a {
     text-decoration: none;
 }
 
+/*scroll-fade*/
+.jsFade {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: opacity 1s,visibility 1s, transform 1s;
+}
+
+.scroll {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+
 #l-header,
 #l-footer {
     width: vw(1000);
