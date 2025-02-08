@@ -26,7 +26,24 @@ a {
     transform: translateY(0px);
 }
 
-
+.start {
+    background-image: linear-gradient(45deg, #c8ffff 0% 1%, #ffc8ff 50%, #ffffc8 99% 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .message {
+    font-size: vw(50);
+    color: #333333;
+    display: none;
+  }
 #l-header,
 #l-footer {
     width: vw(1000);

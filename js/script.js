@@ -7,9 +7,27 @@ $('.p-top__img img:nth-child(n+2)').hide();
     }, 4500
 );
 /*リロード時のフェードイン*/
-$(window).on("load", function() {
-    $('body').fadeIn(2500); 
-});
+$(function() {
+    var messages = $('.message');
+    var currentMessage = 0;
+    var fadeTime = 500;
+    function showNextMessage() {
+      if (currentMessage < messages.length) {
+        messages.eq(currentMessage).fadeIn(fadeTime).delay(fadeTime).fadeOut(fadeTime, function() {
+          currentMessage++;
+          showNextMessage();
+        });
+      } else {
+        $('.start').fadeOut(fadeTime);
+        setTimeout(function() {
+          $('.content').fadeIn(fadeTime);
+        }, fadeTime);
+      }
+    }
+  
+    showNextMessage();
+  });
+  
 
 /*スクロール時のフェードイン*/
 $(function(){
