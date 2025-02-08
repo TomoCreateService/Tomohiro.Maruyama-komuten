@@ -10,7 +10,7 @@ $('.p-top__img img:nth-child(n+2)').hide();
 $(function() {
     var messages = $('.message');
     var currentMessage = 0;
-    var fadeTime = 500;
+    var fadeTime = 750;
     function showNextMessage() {
       if (currentMessage < messages.length) {
         messages.eq(currentMessage).fadeIn(fadeTime).delay(fadeTime).fadeOut(fadeTime, function() {

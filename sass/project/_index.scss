@@ -8,6 +8,19 @@
         opacity: 0.9;
     }
 }
+//一度引いてから拡大させるアニメーション
+@keyframes shrinkThenEnlarge {
+    0% {
+      transform: scale(1);
+    }
+    40% {
+      transform: scale(0.7);
+    }
+    100% {
+      transform: scale(1.0);
+    }
+}
+
 .p-header__left,
 .p-footer__left {
     margin-block: vw(10);
@@ -48,7 +61,7 @@
     align-items: center;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
-    animation: slideUp 1s ease-out forwards;
+    animation: slideUp 1s ease-out forwards 8s;
     transform: translateY(100%);
     opacity: 0;
     z-index: 200;
@@ -79,6 +92,10 @@
     &-img{
         width: vw(480);
         height: vw(400);
+        transition: transform 0.6s ease-in-out;
+        &:hover{
+            animation: shrinkThenEnlarge 0.6s ease-in-out forwards;
+        }
     }
     &-right {
         width: vw(480);
@@ -128,6 +145,10 @@
         img {
             width: vw(460);
             height: vw(300);
+            transition: transform 0.6s ease-in-out;
+            &:hover{
+                animation: shrinkThenEnlarge 0.6s ease-in-out forwards;
+            }
         }
     }
     &-right {

@@ -12,6 +12,18 @@
     100% { transform: translate(0, 0) rotate(0deg); }
 }
 
+//一度引いてから拡大させるアニメーション
+@keyframes shrinkThenEnlarge {
+    0% {
+      transform: scale(1);
+    }
+    40% {
+      transform: scale(0.7);
+    }
+    100% {
+      transform: scale(1.0);
+    }
+}
 .c-title {
     font-size: vw(50);
     line-height: vw(60.5);
@@ -88,6 +100,10 @@
     width: vw(326.67);
     height: vw(203);
     padding-block: vw(5);
+    transition: transform 0.6s ease-in-out;
+        &:hover{
+            animation: shrinkThenEnlarge 0.6s ease-in-out forwards;
+        }
 }
 
 .c-works__sentence {
@@ -100,6 +116,10 @@
     width: vw(480);
     height: vw(300);
     padding-block: vw(5);
+    transition: transform 0.6s ease-in-out;
+        &:hover{
+            animation: shrinkThenEnlarge 0.6s ease-in-out forwards;
+        }
 }
 
 .c-review__text {
